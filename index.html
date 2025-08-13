@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DevOps Lifecycle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+    .stage {
+      background: white;
+      padding: 20px;
+      width: 200px;
+      border-radius: 15px;
+      font-weight: bold;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin: 20px 0;
+      position: relative;
+    }
+    .stage p {
+      font-size: 12px;
+      font-weight: normal;
+      margin-top: 8px;
+      color: #f9f9f9;
+    }
+    /* Arrows */
+    .stage::after {
+      content: "↓";
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 28px;
+      color: #333;
+    }
+    /* Remove arrow from last */
+    .stage:last-child::after {
+      content: "";
+    }
+
+    /* Colors for each stage */
+    .plan { background: #f94144; }
+    .develop { background: #f3722c; }
+    .build { background: #f8961e; }
+    .test { background: #f9844a; }
+    .release { background: #43aa8b; }
+    .deploy { background: #577590; }
+    .operate { background: #4d908e; }
+    .monitor { background: #277da1; }
+  </style>
+</head>
+<body>
+  <h1>DevOps Lifecycle</h1>
+  <p>Detailed vertical DevOps lifecycle with descriptions</p>
+
+  <div class="container">
+    <div class="stage plan">
+      Plan
+      <p>Define project goals, tasks, and resources.</p>
+    </div>
+    <div class="stage develop">
+      Develop
+      <p>Write and review code for the application.</p>
+    </div>
+    <div class="stage build">
+      Build
+      <p>Compile code and package into deployable form.</p>
+    </div>
+    <div class="stage test">
+      Test
+      <p>Verify functionality and fix defects.</p>
+    </div>
+    <div class="stage release">
+      Release
+      <p>Prepare and approve software for production.</p>
+    </div>
+    <div class="stage deploy">
+      Deploy
+      <p>Launch software to production environment.</p>
+    </div>
+    <div class="stage operate">
+      Operate
+      <p>Run and manage the application in production.</p>
+    </div>
+    <div class="stage monitor">
+      Monitor
+      <p>Track performance and gather feedback for improvements.</p>
+    </div>
+  </div>
+</body>
+</html>
